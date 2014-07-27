@@ -15,7 +15,6 @@ public class nohead : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Vector2 screenPosition = Camera.main.WorldToScreenPoint (transform.position);
 		if (transform.position.x < -5) {
 			Object.Destroy(this.gameObject);
 		}
