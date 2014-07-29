@@ -27,6 +27,9 @@ public class Controlador : MonoBehaviour {
 	private int vida=3;
 	private Vector2 velocidade = new Vector2 (3,0);
 
+
+
+
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating ("CriarRobos", 2f, 2f); 
@@ -45,6 +48,14 @@ public class Controlador : MonoBehaviour {
 	
 	}
 
+
+	void OnGUI(){
+		GUI.color = Color.black;
+		GUILayout.Label (" Score : " + score.ToString ());
+		GUILayout.Label ("Vidas restantes :" + vida.ToString ());
+	
+	}
+
 	void CriarRobos(){
 		robo = Random.Range (1, 4);
 		switch (robo) {
@@ -52,7 +63,7 @@ public class Controlador : MonoBehaviour {
 			sembraco = GameObject.Instantiate(sembracoPrefab) as GameObject;
 			sembraco.transform.parent = this.transform;
 			sembraco.rigidbody2D.velocity = velocidade;
-			Debug.Log ("Criou");
+
 			break;
 			
 		case 2:
@@ -109,8 +120,30 @@ public class Controlador : MonoBehaviour {
 	void MeusPesames()
 	{
 		vida--;
-		//Debug.Log (vida);
+		if (vida <= 0) 
+		{
+			FimdeJogo();
+
+		}
 	}
+
+	void StoreHighscore(int newHighscore)
+	{
+		int oldHighscore = PlayerPrefs.GetInt("highscore", 0);  
+		if (newHighscore > oldHighscore) {
+			PlayerPrefs.SetInt ("highscore", newHighscore);
+			PlayerPrefs.SetInt("yourscore", newHighscore);
+				} else {
+			PlayerPrefs.SetInt("yourscore",newHighscore);		
+		}
+	}
+
+	void FimdeJogo(){
+		StoreHighscore (score);
+		Application.LoadLevel("perdeu");
+	}
+
+
 
 
 

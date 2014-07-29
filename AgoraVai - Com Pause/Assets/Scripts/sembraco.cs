@@ -17,7 +17,7 @@ public class sembraco : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () { 
-		if (transform.position.x > 8.5) 
+		if (transform.position.x > 8) 
 		{
 			SendMessageUpwards("ContarRobosMortos");
 			Object.Destroy (this.gameObject);

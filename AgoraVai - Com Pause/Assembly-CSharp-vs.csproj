@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{E2416479-D3AB-A547-D9F3-F6D16D949EFA}</ProjectGuid>
+	<ProjectGuid>{10CD5F9B-3446-12F0-A3EF-756A0BC13281}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -47,9 +47,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Controlador.cs" />
+     <Compile Include="Assets\Scripts\GameOver.cs" />
+     <Compile Include="Assets\Scripts\StartGamer.cs" />
+     <Compile Include="Assets\Scripts\StartLudus.cs" />
      <Compile Include="Assets\Scripts\botaobraco.cs" />
      <Compile Include="Assets\Scripts\botaocabeca.cs" />
      <Compile Include="Assets\Scripts\botaoperna.cs" />
+     <Compile Include="Assets\Scripts\gameOver1.cs" />
      <Compile Include="Assets\Scripts\pause.cs" />
      <Compile Include="Assets\Scripts\sembraco.cs" />
      <Compile Include="Assets\Scripts\semcabeca.cs" />
