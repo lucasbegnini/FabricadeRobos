@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 5b04277b23b2c7b4c8d70132bdc4241f
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - sembracoPrefab: {fileID: 100002, guid: 83886f2bc460d8f41992f36f2de75a1b, type: 2}
+  - botaobracoPrefab: {fileID: 100000, guid: bf64145cb0c276f46aad6257a80ac727, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
