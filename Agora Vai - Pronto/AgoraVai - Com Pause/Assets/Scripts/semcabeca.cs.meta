@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: f3cf23aa5fe7e4c428deb64484d1dd4f
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - cabeca: {instanceID: 0}
+  - obj: {instanceID: 0}
+  - SoundError: {fileID: 8300000, guid: c2851c6c446b12b4a859e6be87772623, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
