@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5b04277b23b2c7b4c8d70132bdc4241f
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - sembracoPrefab: {fileID: 100002, guid: 83886f2bc460d8f41992f36f2de75a1b, type: 2}
+  - sempernaPrefab: {instanceID: 0}
+  - semcabecaPrefab: {instanceID: 0}
+  - botaobracoPrefab: {fileID: 100000, guid: bf64145cb0c276f46aad6257a80ac727, type: 2}
+  - botaopernaPrefab: {instanceID: 0}
+  - botaocabecaPrefab: {instanceID: 0}
+  - Lampada: {fileID: 100000, guid: 0e0a041d9d466f543932f5f792ed8cc1, type: 2}
+  - LampadaVerde: {fileID: 100000, guid: 7aab2dca0bbc5294295be97a77fea6e3, type: 2}
+  - LampadaVermelha: {fileID: 100000, guid: 2ed2d96a154f2114a84e58ab71f04b3e, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
